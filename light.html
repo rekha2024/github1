@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Light ON or OFF using Javascript</h2>
+    <p>Javascript changes the value of the source
+        attribute of an image.
+    </p>
+    <script>
+        function light(sw) {
+            var pic;
+            if (sw==0) {
+                pic="light off.jpg";
+            }else{
+                pic="light on.jpg";
+            }
+            document.getElementById("img").src=pic;
+        }
+    </script>
+    <img id="img" src="light on.jpg" width="300"  height="300">
+    <p>
+        <button type="button" onclick="light(l)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+</body>
+</html>
